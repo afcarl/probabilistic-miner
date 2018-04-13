@@ -1,0 +1,39 @@
+project (probabilistic_miner) {
+	exename = probabilistic_miner
+	includes += /opt/local/include/boost 
+	libpaths +=  /opt/local/lib/  
+        libpaths +=  -lboost_system-mt
+	libpaths +=  -lboost_thread-mt
+
+
+	install = .
+
+	//List of all source files
+	Source_Files {
+	  driver.cpp
+	  Miner.cpp
+          DB_Graph.cpp  
+          Timer.cpp
+          Parser.cpp
+          Graph_DB_File_Reader.cpp  
+          Esu.cpp
+	  Munkres.cpp
+	}
+
+        //List of all template files
+
+	Template_Files {
+          
+	}
+
+	//List of all Header files
+	Header_Files {
+	  Miner.h
+          DB_Graph.h
+          Timer.h
+          Parser.h
+          Graph_DB_File_Reader.h
+          Esu.h
+	  Munkres.h
+	}
+}

@@ -1,0 +1,3 @@
+workspace (probabilistic_miner) {
+ probabilistic_miner.mpc
+}
